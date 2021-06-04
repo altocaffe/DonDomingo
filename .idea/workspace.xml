@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="276edc21-cfc0-4ba2-9f9e-97df01ef65eb" name="Default Changelist" comment="" />
+    <list default="true" id="276edc21-cfc0-4ba2-9f9e-97df01ef65eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +20,7 @@
     <favorites_list name="DonDomingo" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/DonDomingo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -139,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrimerSitio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -170,7 +173,7 @@
       <workItem from="1622585084976" duration="4502000" />
       <workItem from="1622589759284" duration="1058000" />
       <workItem from="1622590925613" duration="1193000" />
-      <workItem from="1622815267494" duration="1130000" />
+      <workItem from="1622815267494" duration="1668000" />
     </task>
     <servers />
   </component>
@@ -182,15 +185,23 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1600.185.1280.680/0.0.1600.860@0.0.1600.860" timestamp="1620940956934" />
-    <state x="493" y="157" key="FileChooserDialogImpl" timestamp="1622815596554">
+    <state x="493" y="157" key="FileChooserDialogImpl" timestamp="1622816896722">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="493" y="157" key="FileChooserDialogImpl/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622815596554" />
+    <state x="493" y="157" key="FileChooserDialogImpl/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622816896722" />
     <state x="580" y="185" key="FileChooserDialogImpl/1600.185.1280.680/0.0.1600.860@0.0.1600.860" timestamp="1621467723603" />
     <state x="634" y="353" key="NewPhpFileDialog" timestamp="1621459328931">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="634" y="353" key="NewPhpFileDialog/1600.185.1280.680/0.0.1600.860@0.0.1600.860" timestamp="1621459328931" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1622817016086">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622817016086" />
+    <state x="489" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622816862230">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="489" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622816862230" />
     <state x="1656" y="173" width="1207" height="723" maximized="true" key="dock-window-1" timestamp="1621468427105">
       <screen x="1600" y="185" width="1280" height="680" />
     </state>
