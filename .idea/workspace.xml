@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="276edc21-cfc0-4ba2-9f9e-97df01ef65eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,18 +172,34 @@
       <workItem from="1622585084976" duration="4502000" />
       <workItem from="1622589759284" duration="1058000" />
       <workItem from="1622590925613" duration="1193000" />
-      <workItem from="1622815267494" duration="1668000" />
+      <workItem from="1622815267494" duration="1973000" />
     </task>
+    <task id="LOCAL-00001" summary="commit don">
+      <created>1622817032810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622817032810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit don" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit don" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620940956934">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1600.185.1280.680/0.0.1600.860@0.0.1600.860" timestamp="1620940956934" />
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1622817032053">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622817032053" />
     <state x="493" y="157" key="FileChooserDialogImpl" timestamp="1622816896722">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -194,10 +209,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="634" y="353" key="NewPhpFileDialog/1600.185.1280.680/0.0.1600.860@0.0.1600.860" timestamp="1621459328931" />
-    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1622817016086">
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1622817040418">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622817016086" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1622817040418" />
     <state x="489" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622816862230">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
