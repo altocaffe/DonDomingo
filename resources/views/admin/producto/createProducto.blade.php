@@ -2,38 +2,38 @@
 @section('content')
 
     <div class="container">
-        <form method="post" action="{{action('Admin\ProductoController@create')}}">
+        <form method="post" action="{{action('Admin\ProductoController@create')}}" enctype="multipart/form-data">
             @csrf
-        <div class="form-group">
+            <div class="form-group">
 
-            <label for="codigo">Codigo</label>
-            <input type="text" name="codigo"
-                   class="form-control @error('codigo') is-invalid @enderror" required>
+                <label for="codigo"><b>Codigo</b></label>
+                <input type="number" name="codigo"
+                       class="form-control @error('codigo') is-invalid @enderror" required>
 
-            @error('codigo')
-            <span class="invalid-feedback" role="alert">
+                @error('codigo')
+                <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
                 </span>
-            @enderror
+                @enderror
 
-        </div>
+            </div>
 
             <div class="form-group">
 
-            <label for="name">Name</label>
-            <input type="text" name="name"
-                   class="form-control @error('name') is-invalid @enderror" required>
+                <label for="name"><b>Nombre</b></label>
+                <input type="text" name="name"
+                       class="form-control @error('name') is-invalid @enderror" required>
 
-            @error('name')
-            <span class="invalid-feedback" role="alert">
+                @error('name')
+                <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
                 </span>
-        @enderror
+                @enderror
 
-    </div>
+            </div>
             <div class="form-group">
 
-                <label for="descripcion">Descripcion</label>
+                <label for="descripcion"><b>Descripcion</b></label>
                 <input type="text" name="descripcion"
                        class="form-control @error('descripcion') is-invalid @enderror" required>
 
@@ -47,11 +47,16 @@
 
             <div class="form-group">
 
-                <label for="talle">Talle</label>
-                <input type="text" name="talle"
-                       class="form-control @error('talle') is-invalid @enderror" required>
+                <label for="talles_disponibles"><b>Talles disponibles</b></label> <br>
 
-                @error('talle')
+                <input type="checkbox" value="S" name="talles_disponibles[]"> <b>S</b>
+                <input type="checkbox" value="M" name="talles_disponibles[]"> <b>M</b>
+                <input type="checkbox" value="L" name="talles_disponibles[]"> <b>L</b>
+                <input type="checkbox" value="XL" name="talles_disponibles[]"> <b>XL</b>
+
+
+
+                @error('talles_disponibles')
                 <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
                 </span>
@@ -61,7 +66,7 @@
 
             <div class="form-group">
 
-                <label for="precio">Precio</label>
+                <label for="precio"><b>Precio</b></label>
                 <input type="number" min="0.01" step="0.01" name="precio"
                        class="form-control @error('precio') is-invalid @enderror" required>
 
@@ -76,8 +81,8 @@
             <div class="form-group">
                 <div class="custom-file">
 
-                    <input type="file" class="custom-file-input" name="foto" accept="image/x-png,image/gif,image/jpeg">
-                    <label class="custom-file-label" for="customFile">Choose photo</label>
+                    <input type="file" class="custom-file-input" name="foto" accept="image/x-png,image/gif,image/jpeg" required >
+                    <label class="custom-file-label" for="customFile" >Elegir foto</label>
                 </div>
 
                 @error('foto')
@@ -88,7 +93,7 @@
             </div>
 
 
-            <button type="submit" class="btn btn-lg btn-primary" >Crear Producto</button>
+            <button type="submit" class="btn btn-lg btn-primary">Crear Producto</button>
 
         </form>
 
