@@ -10,4 +10,5 @@ class Producto extends Model
     use HasFactory;
 
     protected $table = 'productos';
+    protected $casts = ["talles_disponibles" => "array"];
 }

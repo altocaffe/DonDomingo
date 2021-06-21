@@ -29,7 +29,7 @@ class CreateProductoRequest extends FormRequest
             'codigo' => 'required|min:3|string',
             'name' => 'required|min:3|string',
             'descripcion' => 'required|min:3|string',
-            'talle' => 'required|min:3|string',
+            'talles_disponibles' => 'required|array',
             'foto' => 'required|image',
             'precio' => 'required|min:0|numeric',
         ];
@@ -37,13 +37,15 @@ class CreateProductoRequest extends FormRequest
 
     public function commit()
     {
+
         $url = $this->file('foto')->store('public');
         $producto = new Producto();
         $producto->codigo = $this->input('codigo');
-        $producto->name = $this->input('descripcion');
-        $producto->talle = $this->input('talle');
+        $producto->name = $this->input('name');
+        $producto->descripcion = $this->input('descripcion');
+        $producto->talles_disponibles = $this->input('talles_disponibles');
         $producto->precio = $this->input('precio');
-        $producto->url = $url;
+        $producto->url = str_replace("public", "storage", $url);
         $producto->save();
         return $producto;
     }

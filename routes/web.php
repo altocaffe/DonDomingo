@@ -27,6 +27,9 @@ Route::middleware(['auth'])->namespace('Admin')->prefix('admin')->group(function
         Route::get('/', 'ProductoController@index');
         Route::get('/create', 'ProductoController@showForm');
         Route::post('/create', 'ProductoController@create');
+        Route::delete('delete/{producto}', 'ProductoController@delete');
+        Route::get('/{producto}', 'ProductoController@show');
+        Route::patch('/edit/{producto}', 'ProductoController@edit');
     });
 
 });

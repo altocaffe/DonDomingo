@@ -18,7 +18,7 @@ class CreateProductosTable extends Migration
             $table->string('codigo');
             $table->string('name')->unique();
             $table->string('descripcion');
-            $table->string('talle');
+            $table->json('talles_disponibles');
             $table->string('url');
             $table->decimal('precio');
             $table->timestamps();
