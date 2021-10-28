@@ -6,9 +6,5 @@
 
         <br>
     </div>
-
     @include('components.tablaProductos')
-
-
-
 @endsection

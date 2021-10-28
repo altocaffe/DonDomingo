@@ -7,7 +7,14 @@
 require('./bootstrap');
 
 window.Vue = require('vue').default;
+require('./components/components');
+import Vuex from 'vuex'
+Vue.use(Vuex);
+import storeData from "./store/index"
+const store = new Vuex.Store(
+    storeData
 
+)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -18,8 +25,15 @@ window.Vue = require('vue').default;
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faShoppingCart, faTrash  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+library.add(faShoppingCart, faTrash);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+Vue.config.productionTip = false;
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -28,5 +42,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
+    store,
     el: '#app',
 });
+

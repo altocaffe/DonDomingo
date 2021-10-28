@@ -12,17 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'TiendaController@index');
+Route::get('/producto/{producto}', 'TiendaController@producto');
+Route::get('/nosotros', 'TiendaController@nosotros');
+Route::get('/contacto','TiendaController@contacto');
+Route::get('/checkout', 'TiendaController@checkout');
 Auth::routes(['register' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth'])->namespace('Admin')->prefix('admin')->group(function () {
-
         Route::prefix('productos')->group(function (){
         Route::get('/', 'ProductoController@index');
         Route::get('/create', 'ProductoController@showForm');
@@ -31,5 +30,4 @@ Route::middleware(['auth'])->namespace('Admin')->prefix('admin')->group(function
         Route::get('/{producto}', 'ProductoController@show');
         Route::patch('/edit/{producto}', 'ProductoController@edit');
     });
-
 });
