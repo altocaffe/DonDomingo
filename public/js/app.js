@@ -12015,9 +12015,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Producto",
   props: {
@@ -47872,12 +47869,12 @@ var render = function() {
           _c(
             "div",
             { staticClass: "text-teal-500 font-semibold text-lg font-poppins" },
-            [_vm._v(_vm._s(_vm.producto.precio))]
+            [_vm._v(_vm._s(_vm.producto.precio) + "\n            ")]
           )
         ])
       ]),
       _vm._v(" "),
-      _c("div", [
+      _c("div", { staticClass: "p-2" }, [
         _c(
           "label",
           { staticClass: "block text-gray-700 text-sm font-bold mb-2" },
@@ -47920,8 +47917,12 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("div", [
-        _c("label", {}, [_vm._v("Cantidad")]),
+      _c("div", { staticClass: "p-2" }, [
+        _c(
+          "label",
+          { staticClass: "block text-gray-700 text-sm font-bold mb-2" },
+          [_vm._v("Cantidad")]
+        ),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -47932,7 +47933,9 @@ var render = function() {
               expression: "cantidad"
             }
           ],
-          attrs: { type: "number" },
+          staticClass:
+            "block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline",
+          attrs: { type: "number", min: "1", step: "1" },
           domProps: { value: _vm.cantidad },
           on: {
             input: function($event) {
@@ -47946,8 +47949,6 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "flex justify-center items-start px-2 pb-2" }, [
-        _vm._m(0),
-        _vm._v(" "),
         _c("div", { staticClass: "w-1/2 p-2" }, [
           _c(
             "button",
@@ -47963,23 +47964,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-1/2 p-2" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
-        },
-        [_c("b", [_vm._v("Comprar")])]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="276edc21-cfc0-4ba2-9f9e-97df01ef65eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DonDomingo" beforeDir="false" afterPath="$PROJECT_DIR$/DonDomingo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Producto.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Producto.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/producto.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/producto.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +272,7 @@
       <workItem from="1631121123131" duration="5469000" />
       <workItem from="1633553008545" duration="9269000" />
       <workItem from="1633896162344" duration="1367000" />
-      <workItem from="1634671443929" duration="22583000" />
+      <workItem from="1634671443929" duration="23365000" />
     </task>
     <task id="LOCAL-00001" summary="commit don">
       <created>1622817032810</created>
@@ -286,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635382030945</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="borrar repo extra">
+      <created>1635382474076</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635382474076</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +318,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="commit don" />
     <MESSAGE value="TODO FUNCIONA" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO FUNCIONA" />
+    <MESSAGE value="borrar repo extra" />
+    <option name="LAST_COMMIT_MESSAGE" value="borrar repo extra" />
   </component>
   <component name="WindowStateProjectService">
     <state x="235" y="25" key="#CLI_Interpreters" timestamp="1634678072645">
@@ -320,10 +330,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="410" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1628028107453" />
-    <state x="287" y="28" width="749" height="691" key="CommitChangelistDialog2" timestamp="1635382028897">
+    <state x="287" y="28" width="749" height="691" key="CommitChangelistDialog2" timestamp="1635382473298">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="287" y="28" width="749" height="691" key="CommitChangelistDialog2/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382028897" />
+    <state x="287" y="28" width="749" height="691" key="CommitChangelistDialog2/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382473298" />
     <state x="459" y="266" key="ComposerInitDialogKey" timestamp="1634678090079">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -332,26 +342,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="493" y="157" key="FileChooserDialogImpl/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1627327492422" />
-    <state width="1317" height="111" key="GridCell.Tab.0.bottom" timestamp="1635382263781">
+    <state width="1317" height="111" key="GridCell.Tab.0.bottom" timestamp="1635382937551">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1633558959807" />
-    <state width="1317" height="111" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382263781" />
-    <state width="1317" height="111" key="GridCell.Tab.0.center" timestamp="1635382263780">
+    <state width="1317" height="111" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382937551" />
+    <state width="1317" height="111" key="GridCell.Tab.0.center" timestamp="1635382937551">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="171" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1633558959807" />
-    <state width="1317" height="111" key="GridCell.Tab.0.center/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382263780" />
-    <state width="1317" height="111" key="GridCell.Tab.0.left" timestamp="1635382263780">
+    <state width="1317" height="111" key="GridCell.Tab.0.center/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382937551" />
+    <state width="1317" height="111" key="GridCell.Tab.0.left" timestamp="1635382937551">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="171" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1633558959806" />
-    <state width="1317" height="111" key="GridCell.Tab.0.left/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382263780" />
-    <state width="1317" height="111" key="GridCell.Tab.0.right" timestamp="1635382263781">
+    <state width="1317" height="111" key="GridCell.Tab.0.left/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382937551" />
+    <state width="1317" height="111" key="GridCell.Tab.0.right" timestamp="1635382937551">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1317" height="171" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1633558959807" />
-    <state width="1317" height="111" key="GridCell.Tab.0.right/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382263781" />
+    <state width="1317" height="111" key="GridCell.Tab.0.right/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382937551" />
     <state x="456" y="178" key="NewPhpClassDialog" timestamp="1634678803724">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -364,10 +374,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="156" y="13" key="SettingsEditor/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1634678399464" />
-    <state x="362" y="64" key="Vcs.Push.Dialog.v2" timestamp="1635382315874">
+    <state x="362" y="64" key="Vcs.Push.Dialog.v2" timestamp="1635382548500">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="362" y="64" key="Vcs.Push.Dialog.v2/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382315874" />
+    <state x="362" y="64" key="Vcs.Push.Dialog.v2/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382548500" />
     <state x="361" y="179" width="1044" height="547" key="dock-window-1" timestamp="1630529418772">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -377,6 +387,10 @@
     </state>
     <state x="376" y="0" width="607" height="728" key="find.popup/0.0.1360.728/1360.0.1280.680@0.0.1360.728" timestamp="1628031676627" />
     <state x="376" y="0" width="607" height="728" key="find.popup/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635380788870" />
+    <state x="396" y="155" key="git4idea.merge.GitPullDialog" timestamp="1635382819384">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="396" y="155" key="git4idea.merge.GitPullDialog/0.0.1360.728/1360.52.1280.680@0.0.1360.728" timestamp="1635382819384" />
     <state x="336" y="162" key="run.anything.popup" timestamp="1634682899664">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

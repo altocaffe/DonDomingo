@@ -11,21 +11,12 @@
                     <div class="w-full md:w-1/3 p-2">
                        <producto :producto="{{json_encode($producto)}}" imagen="{{asset($producto->url)}}"></producto>
                     </div>
--
                 </div>
-
-
             </div>
-
             <div id="summary" class="w-1/4 px-8 py-10">
                 <h1 class="font-semibold text-2xl border-b pb-8">Pedido</h1>
                 <div class="flex justify-between mt-10 mb-5">
-
                     <h1 class="font-medium text-xl font-poppins">Producto: {{$producto->name}}</h1>
-{{--
-                    <h2 class="font-medium text-xl font-poppins">Producto: {{$producto->precio}}</h2>
---}}
-
                 </div>
                 <div>
                     <label class="font-medium inline-block mb-3 text-sm uppercase">Envio</label>
@@ -33,7 +24,6 @@
                         <option>Envio estandar - $300.00</option>
                     </select>
                 </div>
-
                 <div class="border-t mt-8">
                     <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                         <span>TOTAL</span>

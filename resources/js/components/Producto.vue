@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white shadow-lg hover:shadow-xl rounded-lg ">
         <div class="bg-gray-400 h-64 rounded-t-lg p-4 bg-no-repeat bg-center bg-cover"
-        :style="backgroundImage">
+             :style="backgroundImage">
 
         </div>
         <div class="flex justify-between items-start px-2 pt-2">
@@ -11,32 +11,29 @@
             </div>
             <div class="p-2 text-right">
                 <div
-                    class="text-teal-500 font-semibold text-lg font-poppins">{{producto.precio}}</div>
+                    class="text-teal-500 font-semibold text-lg font-poppins">{{producto.precio}}
+                </div>
             </div>
         </div>
-        <div>
+        <div class="p-2">
             <label class="block text-gray-700 text-sm font-bold mb-2">Talle</label>
-            <select v-model="talle" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-            <option v-for="talle in this.producto.talles_disponibles" v-text="talle">
-            </option>
+            <select v-model="talle"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                <option v-for="talle in this.producto.talles_disponibles" v-text="talle">
+                </option>
             </select>
         </div>
-        <div>
-            <label class="">Cantidad</label>
-            <input type="number" v-model="cantidad">
-
+        <div class="p-2">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Cantidad</label>
+            <input type="number" min="1" step="1"
+                   class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                   v-model="cantidad">
         </div>
 
         <div class="flex justify-center items-start px-2 pb-2">
             <div class="w-1/2 p-2">
-                <button
-                    class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium">
-                    <b>Comprar</b>
-                </button>
-            </div>
-            <div class="w-1/2 p-2">
                 <button @click="agregarAlCarrito"
-                    class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium">
+                        class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium">
                     <b>Agregar al carrito</b>
                 </button>
             </div>
@@ -57,7 +54,7 @@
                 type: String
             }
         },
-        data(){
+        data() {
             return {
                 backgroundImage: ` background-image: url(${this.imagen})`,
                 cantidad: 0,
@@ -65,14 +62,14 @@
             }
         },
         methods: {
-            agregarAlCarrito(){
+            agregarAlCarrito() {
                 let compra = {
                     cantidad: this.cantidad,
                     talle: this.talle,
                     precio: this.producto.precio,
                     nombre: this.producto.name
                 };
-                this.$store.commit('agregarAlCarrito' ,compra);
+                this.$store.commit('agregarAlCarrito', compra);
                 location.href = "/"
             }
         }
